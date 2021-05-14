@@ -18,7 +18,7 @@ const texts = [
 
 // Controls the speed of morphing.
 const morphTime = 1;
-const cooldownTime = 0.9;
+const cooldownTime = 0.95;
 
 let textIndex = texts.length - 1;
 let time = new Date();
