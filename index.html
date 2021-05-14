@@ -21,6 +21,8 @@
 
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="carousel.css">
+	<link rel="stylesheet" type="text/css" href="text-morph.css">
+
 </head>
 
 <body>
@@ -70,9 +72,32 @@
 		<div class="overlay-itro"></div>
 		<div class="hero-content display-table">
 			<div class="table-cell">
-				<div class="container" style="margin-top: 300px;">
+				<div class="container" style="margin-top: 400px;">
 					<h1 class="hero-title mb-4">I am Manas Gupta</h1>
-					<p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Enthusiast, Freelancer, Designer"></span></p>
+					<!-- <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Enthusiast, Freelancer, Designer"></span></p> -->
+
+					<!-- The two texts -->
+					<div id="container">
+						<span id="text1"></span>
+						<span id="text2"></span>
+					</div>
+
+					<!-- The SVG filter used to create the merging effect -->
+					<svg id="filters">
+						<defs>
+							<filter id="threshold">
+								<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+								<feColorMatrix in="SourceGraphic"
+										type="matrix"
+										values="1 0 0 0 0
+												0 1 0 0 0
+												0 0 1 0 0
+												0 0 0 255 -140" />
+							</filter>
+						</defs>
+					</svg>
+					<script type="text/javascript" src="text-morph.js"></script>
+
 					<div>
 						<a href="#about"><span class="arrow"></span></a>
 					</div>
