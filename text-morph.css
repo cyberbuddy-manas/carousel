@@ -20,8 +20,8 @@ body {
 	display: flex;
 	justify-content: center;
 	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-	filter: url(#threshold) blur(0.6px);
-}
+/*	filter: url(#threshold) blur(0.6px);
+*/}
 
 /* Your average text styling */
 #text1, #text2 {
